@@ -7,7 +7,12 @@ import { InputSwitchComponent } from './input-switch/input-switch.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, InputSwitchComponent, ButtonButtonComponent],
-  templateUrl: './app.html',
+  template: `
+    <h1>Hello, {{ title() }}</h1>
+    <app-button-button></app-button-button>
+    <app-input-switch></app-input-switch>
+    <router-outlet></router-outlet>
+  `,
   styleUrl: './app.scss'
 })
 export class App {
