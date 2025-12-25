@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 
-import { Car } from "app/data-table/car";
+import { Car } from "./car";
 
 
 @Injectable()
@@ -12,7 +12,7 @@ export class CarServiceService {
     return this.http
       .get("/showcase/resources/data/cars-small.json")
       .toPromise()
-      .then(res => <Car[]>res.data)
+      .then(res => <Car[]>res)
       .then(data => {
         return data;
       });

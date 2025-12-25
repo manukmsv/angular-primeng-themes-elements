@@ -1,7 +1,11 @@
 import { Component, OnInit } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { ToggleSwitch } from "primeng/toggleswitch";
 
 @Component({
   selector: "app-input-switch",
+  standalone: true,
+  imports: [FormsModule, ToggleSwitch],
   templateUrl: "./input-switch.component.html",
   styleUrls: ["./input-switch.component.css"]
 })

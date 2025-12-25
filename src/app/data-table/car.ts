@@ -1,6 +1,6 @@
 export interface Car {
-  vin;
-  year;
-  brand;
-  color;
+  vin: string;
+  year: number;
+  brand: string;
+  color: string;
 }
